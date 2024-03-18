@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>To-Do App</title>
+</head>
+<body>
+    <div class="container">
+        <div class="todo-app">
+        <h2>To-Do List</h2>
+            <div class="row">
+                    <input type="text" id="newItem" placeholder="Enter a new to-do item">
+                        <button id="addButton">Add to List</button>
+            </div>
+            <div class="list-container">
+            <ul id="todoList"></ul>
+            </div>
+            <button class="menubaritem" onclick="exportList()" >Export to CSV</button>
+            <button class="menubaritem" onclick="reloadApp()" id="refreshList">Refrest List</button>
+            <button class="menubaritem" onclick="resetApp()"id="resetApp">Reset App</button>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
